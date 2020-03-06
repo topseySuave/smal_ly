@@ -1,5 +1,4 @@
 const express = require('express');
-const shortID = require('shortid');
 const connectDB = require('./config/db');
 
 const routes = require('./routes/');
@@ -31,4 +30,4 @@ app.get('*', (req, res) => {
     });
 });
 
-app.listen(PORT, () => console.log(`listening on http://localhost:${PORT}`));
+app.listen(PORT, () => console.log(`listening on ${PORT}`));
