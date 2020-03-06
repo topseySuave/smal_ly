@@ -1,0 +1,6 @@
+POST http://localhost:5000/api/url/shorten
+Content-Type: application/json
+
+{
+    "longUrl": "https://www.amazon.com/PlayStation-4-Console-1TB-Slim/dp/B074LRF639/ref=pd_cp_63_2/139-1402146-5016202?_encoding=UTF8&pd_rd_i=B074LRF639&pd_rd_r=6f520d60-724a-427f-bc5b-ded9f5234aa3&pd_rd_w=xqiGT&pd_rd_wg=acWNm&pf_rd_p=4853e837-f87a-46d4-be32-dcf86bff7a7c&pf_rd_r=SKJ51BRP3ABT0A0AQNH2&psc=1&refRID=SKJ51BRP3ABT0A0AQNH2"
+}
