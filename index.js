@@ -20,7 +20,7 @@ app.use('/api/url', urlRoutes);
 
 app.get('*', (req, res) => {
     res.send({
-        message: 'hello world'
+        message: 'Welcome to smal.ly URL shortner'
     });
 });
 
