@@ -4,8 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "build": "node ./",
-        "start": "node ./",
+        "start": "NODE_ENV=production node ./",
         "dev": "nodemon index"
     },
     "keywords": [],
