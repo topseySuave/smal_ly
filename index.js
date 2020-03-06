@@ -18,12 +18,6 @@ app.use(express.json({ extended: true }));
 app.use('/', routes);
 app.use('/api/url', urlRoutes);
 
-// Make our db accessible to our router
-app.use(function(req, res, next) {
-    req.db = db;
-    next();
-});
-
 app.get('*', (req, res) => {
     res.send({
         message: 'hello world'

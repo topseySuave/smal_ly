@@ -4,8 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "start": "NODE_ENV=production node ./",
-        "dev": "nodemon index"
+        "start": "node ."
     },
     "keywords": [],
     "author": "",
