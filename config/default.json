@@ -1,4 +1,4 @@
 {
     "mongoURL": "mongodb://smally:banker131396@ds161833.mlab.com:61833/smal_ly",
-    "baseURL": "https://smlly.herokuapp.com/"
+    "baseURL": "https://smlly.herokuapp.com"
 }
