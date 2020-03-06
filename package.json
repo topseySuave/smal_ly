@@ -4,18 +4,31 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "start": "node .",
-        "now-start": "node .",
-        "dev": "nodemon ."
+        "dev": "nodemon ./server",
+        "build": "next build",
+        "start": "node ./server",
+        "build:css": "npx tailwindcss build ./pages/index.css -o ./pages/output.css"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "dependencies": {
+        "@babel/polyfill": "^7.8.7",
         "config": "^3.3.0",
         "express": "^4.17.1",
         "mongoose": "^5.9.3",
+        "next": "^9.2.2",
+        "node-sass": "^4.13.1",
+        "react": "^16.13.0",
+        "react-dom": "^16.13.0",
         "shortid": "^2.2.15",
+        "tailwindcss": "^1.2.0",
         "valid-url": "^1.0.9"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.8.7",
+        "@babel/plugin-proposal-class-properties": "^7.8.3",
+        "@babel/preset-env": "^7.8.7",
+        "@babel/preset-react": "^7.8.3"
     }
 }

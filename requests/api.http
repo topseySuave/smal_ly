@@ -1,6 +1,0 @@
-POST https://smlly.herokuapp.com/api/url/shorten
-Content-Type: application/json
-
-{
-    "longUrl": "https://www.amazon.com/PlayStation-Slim-1TB-Console-Bundle-4/dp/B07YLDNTKB/ref=pd_sbs_63_2/139-1402146-5016202?_encoding=UTF8&pd_rd_i=B07YLDNTKB&pd_rd_r=02093a5a-24b0-45c1-868c-6f4b7dc00761&pd_rd_w=iLvj5&pd_rd_wg=AeSL4&pf_rd_p=7cd8f929-4345-4bf2-a554-7d7588b3dd5f&pf_rd_r=EJ0ZSE8ANZSJF7WY8G6A&psc=1&refRID=EJ0ZSE8ANZSJF7WY8G6A"
-}
