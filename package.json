@@ -4,7 +4,9 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "start": "node ."
+        "start": "node .",
+        "now-start": "node .",
+        "dev": "nodemon ."
     },
     "keywords": [],
     "author": "",
