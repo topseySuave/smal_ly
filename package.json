@@ -4,9 +4,11 @@
     "description": "",
     "main": "./server/index.js",
     "scripts": {
-        "dev": "nodemon ./server",
         "build": "next build",
-        "start": "concurrently \"mongod\" \"tailwindcss build ./pages/index.css -o ./pages/output.css\" \"node ./server\" "
+        "start": "node ./server",
+        "dev": "nodemon ./server",
+        "start:dev": "concurrently \"mongod\" \"tailwindcss build ./pages/index.css -o ./pages/output.css\" \"node ./server\" ",
+        "heroku-postbuild": "next build"
     },
     "keywords": [],
     "author": "",

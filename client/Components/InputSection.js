@@ -41,7 +41,7 @@ const InputSection = ({ handleSubmit, handleChange, loading, queryRes, openResbo
                                     <CopyToClipboard text={queryRes.shortUrl}
                                         onCopy={() => toast('Copied to clipboard')} >
                                         <Tooltip content={<small>Copy To ClipBoard</small>}>
-                                            <button>
+                                            <button className="text-grey">
                                                 <FontAwesomeIcon icon={faClipboard} />
                                             </button>
                                         </Tooltip>
