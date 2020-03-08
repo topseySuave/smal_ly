@@ -1,8 +1,11 @@
 // import App from 'next/app';
 import React from 'react';
+import { toast } from 'react-toastify';
 import './output.css';
+import 'react-toastify/dist/ReactToastify.css';
 
 function MyApp({ Component, pageProps }) {
+    toast.configure();
     return <Component {...pageProps} />
 }
   

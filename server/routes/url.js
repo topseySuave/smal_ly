@@ -13,7 +13,7 @@ router.post('/shorten', async(req, res) => {
     const baseUrl = config.get('baseURL') || process.env.baseURL;
 
     if (!validUrl.isUri(baseUrl)) {
-        return res.status(401).send('Invalid Url ');
+        return res.status(400).send('Invalid Url ');
     }
 
     // create Url code
@@ -45,7 +45,7 @@ router.post('/shorten', async(req, res) => {
             res.status(500).send('Server error');
         }
     } else {
-        res.status(401).send('Invalid Url');
+        res.status(400).send('Invalid Url');
     }
 });
 

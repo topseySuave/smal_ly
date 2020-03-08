@@ -14,6 +14,10 @@ body {
     background-attachment: fixed;
 }
 
+*:focus {
+    outline: 0;
+}
+
 .title-logo {
     /* font-family: 'Chango', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
     font-family: 'Chango', cursive;

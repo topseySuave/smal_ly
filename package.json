@@ -2,25 +2,31 @@
     "name": "smal_ly",
     "version": "1.0.0",
     "description": "",
-    "main": "index.js",
+    "main": "./server/index.js",
     "scripts": {
         "dev": "nodemon ./server",
         "build": "next build",
-        "start": "node ./server",
-        "build:css": "npx tailwindcss build ./pages/index.css -o ./pages/output.css"
+        "start": "concurrently \"mongod\" \"tailwindcss build ./pages/index.css -o ./pages/output.css\" \"node ./server\" "
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "dependencies": {
         "@babel/polyfill": "^7.8.7",
+        "@fortawesome/fontawesome-svg-core": "^1.2.27",
+        "@fortawesome/free-solid-svg-icons": "^5.12.1",
+        "@fortawesome/react-fontawesome": "^0.1.9",
+        "concurrently": "^5.1.0",
         "config": "^3.3.0",
         "express": "^4.17.1",
         "mongoose": "^5.9.3",
         "next": "^9.2.2",
         "node-sass": "^4.13.1",
         "react": "^16.13.0",
+        "react-copy-to-clipboard": "^5.0.2",
         "react-dom": "^16.13.0",
+        "react-simple-tooltip": "^2.6.1",
+        "react-toastify": "^5.5.0",
         "shortid": "^2.2.15",
         "tailwindcss": "^1.2.0",
         "valid-url": "^1.0.9"
@@ -28,7 +34,9 @@
     "devDependencies": {
         "@babel/core": "^7.8.7",
         "@babel/plugin-proposal-class-properties": "^7.8.3",
+        "@babel/plugin-transform-runtime": "^7.8.3",
         "@babel/preset-env": "^7.8.7",
-        "@babel/preset-react": "^7.8.3"
+        "@babel/preset-react": "^7.8.3",
+        "@babel/runtime": "^7.8.7"
     }
 }
