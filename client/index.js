@@ -28,12 +28,11 @@ const App = () => {
         try {
             if (res.ok) {
                 setLoading(false);
-                setQueryRes(actualRes)
+                setQueryRes(actualRes);
             }
             else {
                 throw res.statusText;
             }
-
         } catch (error) {
             setLoading(false);
             setQueryRes(error);

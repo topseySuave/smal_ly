@@ -30,12 +30,12 @@ const InputSection = ({ handleSubmit, handleChange, loading, queryRes, openResbo
                 {openResbox &&
                     (<div className="px-6 py-4">
                         {loading ? (<p className="text-grey-500">Generating smal.ly URL...</p>) :
-                            queryRes === 'Bad Request' ? <p>{queryRes}: Invalid URL</p> :
+                            queryRes === 'Bad Request' ? <p className="text-red">{queryRes}: Invalid URL or URI is to short</p> :
                             <>
                                 <div className="font-bold text-xl mb-2">Your link is ready</div>
                                 <div className="flex justify-between">
                                     <a target="_blank" href={queryRes.shortUrl} className="text-blue text-base">
-                                        {queryRes.shortUrl}
+                                        {`https://smal.ly/${queryRes.urlCode}`}
                                     </a>
 
                                     <CopyToClipboard text={queryRes.shortUrl}
