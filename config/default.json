@@ -1,4 +1,4 @@
 {
-    "mongoURL" "mongodb+srv://smally:banker131396@smal-ly.vhcor.mongodb.net/smal_ly?retryWrites=true&w=majority"
+    "mongoURL": "mongodb+srv://smally:banker131396@smal-ly.vhcor.mongodb.net/smal_ly?retryWrites=true&w=majority",
     "baseURL": "https://smlly.herokuapp.com"
 }
