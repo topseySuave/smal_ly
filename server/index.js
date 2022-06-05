@@ -8,7 +8,7 @@ const handle = app.getRequestHandler();
 const routes = require('./routes/');
 const urlRoutes = require('./routes/url');
 
-const PORT = parseInt(process.env.PORT, 10) || 5000;
+const PORT = parseInt(process.env.PORT, 10) || 5003;
 
 app.prepare().then(() => {
     // Set up the express app

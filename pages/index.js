@@ -1,4 +1,5 @@
 import React from 'react';
 import App from '../client';
 
-export default () => <App />;
+const DefaultApp = () => <App />;
+export default DefaultApp;

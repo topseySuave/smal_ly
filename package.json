@@ -23,7 +23,7 @@
         "express": "^4.17.1",
         "mongoose": "^5.9.3",
         "next": "^9.3.0",
-        "node-sass": "^4.13.1",
+        "node-sass": "6.0",
         "react": "^16.13.0",
         "react-copy-to-clipboard": "^5.0.2",
         "react-dom": "^16.13.0",
