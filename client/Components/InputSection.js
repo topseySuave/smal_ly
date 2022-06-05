@@ -8,6 +8,7 @@ import { toast } from 'react-toastify';
 const InputSection = ({ handleSubmit, handleChange, loading, queryRes, openResbox }) => (
     <div className="container mx-auto py-8">
         <div className="flex items-center flex-col mx-auto max-w-2xl">
+            <div className="text-grey">Input a long URL in the input field below to get a shortened version</div>
             <form
                 className="w-full flex block shadow-lg appearance-none w-full
                 bg-white text-gray-700 rounded py-3 px-4 mb-3 leading-tight
