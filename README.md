@@ -1,7 +1,7 @@
 ### Smally URL Shortner
 -------------------------------------------
 
-Preview domain before getting the actual domain https://smlly.herokuapp.com/
+Preview domain before getting the actual domain [https://smally.herokuapp.com/](https://smally.herokuapp.com)
 
 
 ###### To Contribute
